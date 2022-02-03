@@ -28,7 +28,9 @@ class Book(models.Model):
 
     # Date ↓
     # DateField, TimeField, DateTimeField
-    published = models.DateField(blank=True, null=True,default=None)
+    published = models.DateField(blank=True, null=True, default=None)
+
+    is_published = models.BooleanField(default=False)
 
     # Uploading ↓
     # FileField, ImageField
